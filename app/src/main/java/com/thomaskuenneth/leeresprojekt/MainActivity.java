@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
 
+
         Button b = (Button)findViewById(R.id.next);
         b.setOnClickListener(new View.OnClickListener(){
 
@@ -37,9 +38,11 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_INSERT, ContactsContract.Contacts.CONTENT_URI);
-                intent.putExtra("finshActivitiOnSaveCompleted",true);
-                intent.putExtra(ContactsContract.Intents.Insert.NAME,name.getText());
-                intent.putExtra(ContactsContract.Intents.Insert.PHONE,phone.getText());
+                name = (EditText) findViewById(R.id.name);
+                phone = (EditText) findViewById(R.id.phone) ;
+                intent.putExtra("finishActivityOnSaveCompleted",true);
+                intent.putExtra(ContactsContract.Intents.Insert.NAME,name.getText().toString());
+                intent.putExtra(ContactsContract.Intents.Insert.PHONE,phone.getText().toString());
                 intent.putExtra(ContactsContract.Intents.Insert.PHONE_TYPE,ContactsContract.CommonDataKinds.Phone.TYPE_HOME);
                 startActivity(intent);
 
