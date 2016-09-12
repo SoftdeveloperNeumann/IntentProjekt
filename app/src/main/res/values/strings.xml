@@ -4,5 +4,6 @@
     <string name="app_name">Leeres_Projekt</string>
     <string name="hello">Hallo!</string>
     <string name="weiter">weiter</string>
+    <string name="insert">einfügen</string>
 
 </resources>
