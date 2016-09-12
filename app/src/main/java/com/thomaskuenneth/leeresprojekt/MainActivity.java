@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
                 intent.putExtra("name", name.getText().toString());
                 intent.putExtra("phone", phone.getText().toString());
                 startActivity(intent);
+
             }
         });
 
