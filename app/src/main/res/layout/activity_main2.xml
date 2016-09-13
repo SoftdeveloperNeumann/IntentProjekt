@@ -6,7 +6,7 @@
     tools:context="com.thomaskuenneth.leeresprojekt.Main2Activity">
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/textView"
@@ -16,4 +16,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:inputType="text" />
+
+
 </RelativeLayout>
